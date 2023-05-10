@@ -43,13 +43,13 @@ class FileAdapter(private val onItemClick:  (item: File) -> Unit)
             binding.size.text = product.size.toString()
             if (product.isDirectory) {
                 binding.img.setImageResource(R.drawable.ic_baseline_folder_24)
-//            } else if (product.name.endsWith(".jpg") || product.name.endsWith(".png")
-//                || product.name.endsWith(".jpeg")){
-//                binding.img.setImageURI(product.fullName.toUri())
-//            } else if (product.name.endsWith(".pdf")){
-//                binding.img.setImageResource(R.drawable.ic_baseline_picture_as_pdf_24)
-//            } else if (product.name.endsWith(".zip")){
-//                binding.img.setImageResource(R.drawable.ic_baseline_archive_24)
+            } else if (product.name.endsWith(".jpg") || product.name.endsWith(".png")
+                || product.name.endsWith(".jpeg")){
+                binding.img.setImageURI(product.fullName.toUri())
+            } else if (product.name.endsWith(".pdf")){
+                binding.img.setImageResource(R.drawable.ic_baseline_picture_as_pdf_24)
+            } else if (product.name.endsWith(".zip")){
+                binding.img.setImageResource(R.drawable.ic_baseline_archive_24)
             } else {
                 binding.img.setImageResource(R.drawable.ic_baseline_insert_drive_file_24)
             }
